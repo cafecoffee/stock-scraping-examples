@@ -65,7 +65,7 @@ print(df.head())
 def draw_chart():
     trace = go.Scatter(x=df.date, y=df.close, name=get_corporation_name())
     data = [trace]
-    layout = dict(title='{}의 종가(close) Time Series'.format(get_corporation_name()),
+    layout = dict(title='{}의 거래량'.format(get_corporation_name()),
                   xaxis=dict(
                       rangeselector=dict(
                           buttons=list([
